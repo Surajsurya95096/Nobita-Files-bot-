@@ -1476,14 +1476,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=dreamx_download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=dreamx_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥 Fast Download 📥", url=dreamx_download),  # we download Link
+                                                    InlineKeyboardButton('📺 Watch online 📺', url=dreamx_stream)]])  # web stream Link
             )
             dreamcinezone = await query.edit_message_reply_markup(
                 reply_markup=InlineKeyboardMarkup([
                     [
-                        InlineKeyboardButton("🚀 Download ", url=dreamx_download),
-                        InlineKeyboardButton('🖥️ Watch ', url=dreamx_stream)
+                        InlineKeyboardButton("📥 Download ", url=dreamx_download),
+                        InlineKeyboardButton('📺 Watch ', url=dreamx_stream)
                     ],
                     [
                         InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=UPDATE_CHNL_LNK)
@@ -1521,9 +1521,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('𓆩✙ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✙𓆪', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
+                    InlineKeyboardButton(' Sᴇᴀʀᴄʜ 🎬', callback_data='help'),
                     InlineKeyboardButton(' ᴀʙᴏᴜᴛ 🌝', callback_data='about')
                 ],[
                     InlineKeyboardButton('⫸ Sᴇᴀʀᴄʜ Mᴏᴠɪᴇs / Sᴇʀɪᴇs Hᴇʀᴇ ⫷', url=f"https://t.me//Deendayal_Hindi_Movies")
